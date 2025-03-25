@@ -1,0 +1,22 @@
+@import url(estilo.css);
+
+/*contraste */
+
+.high-contrast .herramienta {
+    background-color: #121212; 
+    transition: ease 0.5s;
+}
+
+.high-contrast .herramienta p {
+    transition: ease 0.5s;
+    color: #f3f3f3; 
+}
+
+.high-contrast .herramienta ul {
+    color: #f3f3f3; 
+}
+
+.high-contrast .herramienta li {
+    transition: ease 0.5s;
+    color: #f3f3f3; 
+}

@@ -1,0 +1,135 @@
+@import url(estilo.css);
+
+#acercade {
+    height: 400px;
+}
+
+#acercade img:nth-child(1) {
+    width: 35%;
+    left: 0;
+    margin-left: 30%;
+    margin-top: -20px;
+    animation: flotar 5s ease-in-out infinite;
+}
+
+#acercade img:nth-child(2) {
+    width: 10%;
+    left: 0;
+    margin-left: 55%;
+    animation: flotar 5s ease-in-out infinite;
+}
+
+#acercade img:nth-child(3) {
+    width: 25%;
+    right: 0;
+    margin-right: 20%;
+    margin-top: 40px;
+    animation: flotar 5s ease-in-out infinite;
+}
+
+#acercade img:nth-child(4) {
+    width: 10%;
+    right: 0;
+    margin-right: 12%;
+    margin-top: 230px;
+    animation: flotar 5s ease-in-out infinite;
+}
+
+#acercade-header {
+    height: 350px;
+    background: linear-gradient(90deg, rgba(75, 67, 202, 0.75) 0%, rgba(0, 122, 187, 0.75) 50%, rgba(75, 67, 202, 0.75) 100%);
+}
+
+#acercade-contenido {
+    height: 350px;
+}
+
+#mision-vision {
+    height: 450px;
+    display: flex;
+}
+
+#mision-vision>div {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#mision-vision>div>img {
+    width: 9%;
+}
+
+#mision-vision>div>p {
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+}
+
+#mision {
+    background-color: var(--morado);
+}
+
+#vision {
+    background-color: var(--azul);
+}
+
+#banner-header {
+    height: 400px;
+}
+
+#banner-header>.seccion-header .titulo {
+    line-height: 60px;
+}
+
+.txt-gradiente {
+    background: linear-gradient(90deg, rgba(75, 67, 202, 1) 0%, rgba(0, 122, 187, 1) 30%, rgba(39, 93, 195, 1) 60%, rgba(75, 67, 202, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 100% 100%;
+    display: inline-block;
+}
+
+#banner>img {
+    width: 45%;
+    right: 0;
+    margin-right: 5%;
+    margin-top: -50px;
+    animation: flotar 5s ease-in-out infinite;
+}
+
+#llamado-a-la-accion-header {
+    height: 500px;
+    background: rgb(0, 122, 187);
+    background: linear-gradient(90deg, rgba(75, 67, 202, 1) 0%, rgba(0, 122, 187, 1) 100%);
+}
+
+#contenedor-iconos{
+    display: flex;
+    padding:10px;
+    gap:50px;
+}
+
+#contenedor-iconos i{
+    transform: scale(2.5);
+    color:var(--verde);
+    transition: 0.5s ease;
+}
+
+#contenedor-iconos i:hover{
+    cursor: pointer;
+    color:white;
+    transition: 0.5s ease;
+}
+
+#llamado-a-la-accion-header img{
+    width:40%;
+    right:0;
+    bottom:0;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Herramientas - Vision UX Lab</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/herramientas.css">
+    <link rel="stylesheet" href="css/cambiosHerramientas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body>
+    <main class="animate__animated animate__fadeIn">
+        <nav>
+            <ul>
+                <li><a href="index.html">Logo</a></li>
+                <li><a href="acercade.html">Acerca de</a></li>
+                <li class="active-li"><a>Herramientas</a></li>
+                <li><a href="recursos.html">Recursos</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <section id="principal">
+            <section id="herramientas">
+                <div id="herramientas-header" class="header">
+                    <div id="contenedor-header-herramientas">
+                        <div>
+                            <h1 class="titulo blanco">Accesibilidad en</h1>
+                            <h1 class="titulo blanco">acción</h1>
+                        </div>
+                        <img src="recursos/ojo.png">
+                        <p class="subtitulo blanco">Diseñar accesible es más fácil cuando puedes experimentar en tiempo
+                            real. </p>
+                        <p class="subtitulo blanco">Descubre cómo diseñar una web para cada mirada.</p>
+
+                        <div id="iconos-categorias">
+                            <div class="categoria">
+                                <div class="img-categoria">
+                                    <a href="#" data-section="disenoDeInterfaces" class="nav-link active">Diseño de interfaces<img src="recursos/categoria1.png"></a>
+                                </div>
+                                <label class="blanco">Diseño de interfaces</label>
+                            </div>
+
+                            <div class="categoria">
+                                <div class="img-categoria">
+                                    <a href="#" data-section="accesibilidadWeb" class="nav-link">Pruebas de Accesibilidad<img src="recursos/categoria2.png"></a>
+                                </div>
+                                <label class="blanco">Pruebas de accesibilidad</label>
+                            </div>
+
+                            <div class="categoria">
+                                <div class="img-categoria">
+                                    <a href="#" data-section="desarrolloWeb" class="nav-link">Desarrollo web<img
+                                            src="recursos/categoria3.png"></a>
+                                </div>
+                                <label class="blanco">Desarrollo web</label>
+                            </div>
+
+                            <div class="categoria">
+                                <div class="img-categoria">
+                                    <a href="#" data-section="capacitacion" class="nav-link">Capacitación y recursos<img
+                                            src="recursos/categoria4.png"></a>
+                                </div>
+                                <label class="blanco">Capacitación y recursos</label>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <section id="probar-herramientas-seccion">
+                    <div id="probar-herramientas-contenedor">
+                        <div id="uso-de-herramientas">
+                            <h2 class="morado titulo-2">Uso de herramientas</h2>
+                            <div id="contenedor-input">
+                                <input id="buscador" type="text" placeholder="Busca una herramienta o recurso:">
+                                <span>
+                                    <i class="fas fa-search"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div id="texto-categoria">
+                            <h2 class="morado titulo-3">Nombre categoría</h2>
+                            <p class="parrafo negro">Herramientas que ayudan a diseñar para personas con algún grado de
+                                discapacidad
+                                visual.
+                                Explora herramientas para mejorar la usabilidad, el contraste y la navegación en tus
+                                páginas web.</p>
+                        </div>
+
+                        <div id="no-resultados-contenedor">
+                            <h1 class="morado titulo">¡Ups! <i class="fas fa-heart-broken"></i></h1>
+                            <p class="negro parrafo">Parece que no encontramos esa herramienta en el catálogo. Asegúrate de escribir el nombre correctamente o <a href="index.html#contacto" class="morado" style="font-weight: 600;">haz clic aquí</a> para sugerir que la añadamos al catálogo.</p>
+                        </div>
+
+                        <div id="contenedor-herramientas">
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+
+        <footer>
+            <div class="div-footer">
+                <img>
+            </div>
+            <div class="div-footer">
+                <ul>
+                    <li><a>Inicio</a></li>
+                    <li><a>Acerca de</a></li>
+                    <li><a>Herramientas</a></li>
+                </ul>
+            </div>
+            <div class="div-footer">
+                <ul>
+                    <li><a>Recursos</a></li>
+                    <li><a>Contacto</a></li>
+                    <li><a>Política de privacidad</a></li>
+                </ul>
+            </div>
+            <div class="div-footer">
+                <ul id="hecho-por">
+                    <li>Hecho por:</li>
+                    <li><a>Link 1</a></li>
+                    <li><a>Link 2</a></li>
+                </ul>
+            </div>
+        </footer>
+    </main>
+</body>
+<script src="https://kit.fontawesome.com/d47799ae54.js" crossorigin="anonymous"></script>
+<script src="js/nav.js"></script>
+<script src="js/conectarapi.js"></script>
+<script src="js_herramientas/contraste.js"></script>
+
+</html>
