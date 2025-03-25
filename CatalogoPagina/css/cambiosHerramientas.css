@@ -1,5 +1,35 @@
 @import url(estilo.css);
 
+/* Protanopía */
+body.protanopia {
+    --azul: #38A0C8;   /* Azul más distinguible */
+    --morado: #7070EB; /* Morado más claro */
+    --verde: #C6C799;  /* Verde amarillento más distinguible */
+    --gris: #797371;
+    --blanco: #FBFBFA;
+    --negro: #1A1A1A;
+}
+
+/* Deuteranopía */
+body.deuteranopia {
+    --azul: #38A0C8;
+    --morado: #7070EB;
+    --verde: #C6C799;
+    --gris: #797371;
+    --blanco: #FBFBFA;
+    --negro: #1A1A1A;
+}
+
+/* Tritanopía */
+body.tritanopia {
+    --azul: #38A086;   /* Verde-azulado */
+    --morado: #AF8C78; /* Color más distinguible en la gama del morado */
+    --verde: #C6C799;
+    --gris: #6c564e;
+    --blanco: #FBFBFA;
+    --negro: #1A1A1A;
+}
+
 /*contraste */
 
 .high-contrast .herramienta {
@@ -19,4 +49,61 @@
 .high-contrast .herramienta li {
     transition: ease 0.5s;
     color: #f3f3f3; 
+}
+
+
+/* daltonismos *
+
+/* Daltonismo: Protanopía */
+.protanopia #herramientas-header {
+    background: linear-gradient(300deg, rgba(56, 160, 200, 0.7) 0%, rgba(112, 112, 235, 0.7) 30%, rgba(56, 160, 200, 0.7) 60%, rgba(112, 112, 235, 0.7) 100%);
+}
+
+.protanopia #probar-herramientas-seccion {
+    background: linear-gradient(315deg, rgba(251, 251, 250, 0.5) 0%, rgba(56, 160, 200, 0.5) 20%, rgba(112, 112, 235, 0.5) 80%, rgba(251, 251, 250, 0.5) 100%);
+}
+
+.protanopia #probar-herramientas-contenedor {
+    border-right: 5px solid rgba(112, 112, 235, 0.5);
+    border-bottom: 5px solid rgba(112, 112, 235, 0.5);
+}
+
+.protanopia .switch {
+    --switch-checked-bg: rgb(56, 230, 150);
+}
+
+/* Daltonismo: Deuteranopía */
+.deuteranopia #herramientas-header {
+    background: linear-gradient(300deg, rgba(56, 160, 200, 0.7) 0%, rgba(112, 112, 235, 0.7) 30%, rgba(56, 160, 200, 0.7) 60%, rgba(112, 112, 235, 0.7) 100%);
+}
+
+.deuteranopia #probar-herramientas-seccion {
+    background: linear-gradient(315deg, rgba(251, 251, 250, 0.5) 0%, rgba(56, 160, 200, 0.5) 20%, rgba(112, 112, 235, 0.5) 80%, rgba(251, 251, 250, 0.5) 100%);
+}
+
+.deuteranopia #probar-herramientas-contenedor {
+    border-right: 5px solid rgba(112, 112, 235, 0.5);
+    border-bottom: 5px solid rgba(112, 112, 235, 0.5);
+}
+
+.deuteranopia .switch {
+    --switch-checked-bg: rgb(56, 230, 150);
+}
+
+/* Daltonismo: Tritanopía */
+.tritanopia #herramientas-header {
+    background: linear-gradient(300deg, rgba(56, 160, 140, 0.7) 0%, rgba(175, 140, 120, 0.7) 30%, rgba(56, 160, 140, 0.7) 60%, rgba(175, 140, 120, 0.7) 100%);
+}
+
+.tritanopia #probar-herramientas-seccion {
+    background: linear-gradient(315deg, rgba(251, 251, 250, 0.5) 0%, rgba(56, 160, 140, 0.5) 20%, rgba(175, 140, 120, 0.5) 80%, rgba(251, 251, 250, 0.5) 100%);
+}
+
+.tritanopia #probar-herramientas-contenedor {
+    border-right: 5px solid rgba(175, 140, 120, 0.5);
+    border-bottom: 5px solid rgba(175, 140, 120, 0.5);
+}
+
+.tritanopia .switch {
+    --switch-checked-bg: rgb(160, 220, 160);
 }

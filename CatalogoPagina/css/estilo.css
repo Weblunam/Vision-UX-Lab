@@ -13,10 +13,43 @@
 
     --blanco: #FBFBFA;
     --negro: #1A1A1A;
+
+
+
 }
 
 :root {
     font-size: 12px;
+}
+
+/* Protanopía */
+body.protanopia *{
+    --azul: #38A0C8;   /* Azul más distinguible */
+    --morado: #7070EB; /* Morado más claro */
+    --verde: #C6C799;  /* Verde amarillento más distinguible */
+    --gris: #797371;
+    --blanco: #FBFBFA;
+    --negro: #1A1A1A;
+}
+
+/* Deuteranopía */
+body.deuteranopia *{
+    --azul: #38A0C8;
+    --morado: #7070EB;
+    --verde: #C6C799;
+    --gris: #797371;
+    --blanco: #FBFBFA;
+    --negro: #1A1A1A;
+}
+
+/* Tritanopía */
+body.tritanopia *{
+    --azul: #38A086;   /* Verde-azulado */
+    --morado: #AF8C78; /* Color más distinguible en la gama del morado */
+    --verde: #C6C799;
+    --gris: #6c564e;
+    --blanco: #FBFBFA;
+    --negro: #1A1A1A;
 }
 
 @font-face {

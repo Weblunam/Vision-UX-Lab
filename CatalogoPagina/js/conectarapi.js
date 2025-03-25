@@ -35,6 +35,12 @@ document.addEventListener("DOMContentLoaded", () => {
             document.body.classList.remove("high-contrast");
             localStorage.setItem("highContrast", "false");
 
+            //quita la clase de daltonismo al seleccionar otra categoria
+            document.body.classList.remove("protanopia", "deuteranopia", "tritanopia");
+            localStorage.setItem("protanopia", "false");
+            localStorage.setItem("deuteranopia", "false");
+            localStorage.setItem("tritanopia", "false");
+
             // Extraer el label y la categoria correspondiente
             const categoryLabel = link.textContent.trim();
             const categoria = mapCategoryLabel(categoryLabel);

@@ -16,19 +16,45 @@
         },
         {
           "id": 2,
-          "titulo": "Daltonismo",
-          "subtitulo": "Adaptación del color para accesibilidad visual.",
-          "descripcion": "El daltonismo es una alteración de la percepción del color que dificulta la distinción de ciertos tonos. Esta herramienta permite simular distintos tipos de daltonismo para evaluar la accesibilidad del diseño web.",
+          "titulo": "Protanopía",
+          "subtitulo": "Simulación de visión Protanópica.",
+          "descripcion": "Visualización optimizada para simular la baja sensibilidad hacia los tonos rojos, permitiendo experimentar cómo se perciben los colores en condiciones protanópicas.",
           "imagen": "https://i.imgur.com/LBZjp6F.png",
           "caracteristicas": [
-            "Simulación de diferentes tipos de daltonismo: protanopía, deuteranopía, tritanopía.",
-            "Aplicación de filtros sobre la interfaz para visualizar cambios en tiempo real.",
-            "Evaluación de la diferenciación de colores en la interfaz."
+            "Reducción precisa en la percepción de rojos y sus matices.",
+            "Aplicación de filtros interactivos que transforman la interfaz de forma inmediata.",
+            "Análisis y realce del contraste entre colores para facilitar su diferenciación."
           ],
-          "switch_id": "DaltonismoSwitch"
+          "switch_id": "protanopiaSwitch"
         },
         {
           "id": 3,
+          "titulo": "Deuteranopía",
+          "subtitulo": "Simulación de visión Deuteranópica",
+          "descripcion": "Emulación diseñada para reflejar la disminución en la percepción de tonos verdes, evidenciando cómo varía la presentación de la paleta en entornos digitales.",
+          "imagen": "https://i.imgur.com/LBZjp6F.png",
+          "caracteristicas": [
+            "Reproducción fiel de la baja percepción de los tonos verdes.",
+            "Filtros aplicados en la interfaz que permiten ver cambios al instante.s",
+            "Herramientas de evaluación que ayudan a mejorar la diferenciación y legibilidad de colores."
+          ],
+          "switch_id": "deuteranopiaSwitch"
+        },
+        {
+          "id": 4,
+          "titulo": "Tritanopía",
+          "subtitulo": "Simulación de visión Tritanópica",
+          "descripcion": "Representación visual que refleja la dificultad para distinguir los tonos azules y amarillos, adecuando la interfaz para evidenciar las alteraciones propias de la tritanopía.",
+          "imagen": "https://i.imgur.com/LBZjp6F.png",
+          "caracteristicas": [
+            "Simulación de la pérdida de sensibilidad a azules y amarillos.",
+            "Aplicación de modificaciones visuales en tiempo real para observar el impacto de esta condición.",
+            "Evaluación constante de la diferenciación cromática para optimizar la experiencia del usuario."
+          ],
+          "switch_id": "tritanopiaSwitch"
+        },
+        {
+          "id": 5,
           "titulo": "Lector de pantalla",
           "subtitulo": "Conversión de texto a voz para accesibilidad.",
           "descripcion": "Los lectores de pantalla permiten que personas con discapacidad visual accedan al contenido web mediante síntesis de voz.",
@@ -41,7 +67,7 @@
           "switch_id": "lectorSwitch"
         },
         {
-          "id": 4,
+          "id": 6,
           "titulo": "Modo Enfoque",
           "subtitulo": "Indicador visual para navegación con teclado.",
           "descripcion": "Resalta los elementos activos durante la navegación con teclado, mejorando la accesibilidad de la interfaz.",
