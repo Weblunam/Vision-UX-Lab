@@ -15,9 +15,9 @@
         <nav>
             <ul>
                 <li><a href="index.html">Logo</a></li>
-                <li><a href="acercade.html">Acerca de</a></li>
-                <li><a href="herramientas.html">Herramientas</a></li>
-                <li><a href="recursos.html">Recursos</a></li>
+                <li><a href="#acercade">Acerca de</a></li>
+                <li><a href="#herramientas">Herramientas</a></li>
+                <li><a href="#recursos">Recursos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
@@ -56,7 +56,7 @@
                     </div>
                     <div class="numero">
                         <h1 class="morado">97%</h1>
-                        <p class="parrafo negro">de las páginas de inicio tenían texto de bajo contraste</p>
+                        <p class="parrafo negro">de las páginas de inicio tenían fallas  de WCAG</p>
                     </div>
                     <div class="numero">
                         <h1 class="azul">03%</h1>
@@ -69,28 +69,41 @@
                 </h2>
 
                 <section id="graficas">
-                    <div class="div-grafica">
-                        <div class="grafica" style="height:232px;">
-                            <p>58%</p>
+                    <div id="contenedor-graficas">
+                        <div class="div-grafica">
+                            <h1 class="morado titulo">58%</h1>
+                            <div class="grafica grafica-1">
+                                <h2 class="blanco titulo-2"> TIENE PROBLEMAS DE SALUD VISUAL</h2>
+                            </div>
                         </div>
-                    </div>
-                    <div class="div-grafica">
-                        <div class="grafica" style="height:116px;"></div>
-                    </div>
-                    <div class="div-grafica">
-                        <div class="grafica"></div>
-                    </div>
-                    <div class="div-grafica">
-                        <div class="grafica"></div>
-                    </div>
-                    <div class="div-grafica">
-                        <div class="grafica"></div>
-                    </div>
-                    <div class="div-grafica">
-                        <div class="grafica"></div>
-                    </div>
-                    <div class="div-grafica">
-                        <div class="grafica"></div>
+
+                        <div class="div-grafica">
+                            <h1 class="morado titulo">29%</h1>
+                            <div class="grafica grafica-2">
+                                <h2 class="blanco titulo-2"> TIENE MIOPÍA</h2>
+                            </div>
+                        </div>
+
+                        <div class="div-grafica">
+                            <h1 class="morado titulo">42%</h1>
+                            <div class="grafica grafica-3">
+                                <h2 class="blanco titulo-2"> TIENE EMETROPÍA</h2>
+                            </div>
+                        </div>
+
+                        <div class="div-grafica">
+                            <h1 class="morado titulo">44%</h1>
+                            <div class="grafica grafica-4">
+                                <h2 class="blanco titulo-2"> TIENE ALGUNA DISCAPACIDAD VISUAL</h2>
+                            </div>
+                        </div>
+
+                        <div class="div-grafica">
+                            <h1 class="morado titulo">75%</h1>
+                            <div class="grafica grafica-5">
+                                <h2 class="blanco titulo-2"> DE LOS CASOS PUEDE SER EVITABLE</h2>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </section>
@@ -103,13 +116,13 @@
                             sitios web accesibles, especialmente para personas con discapacidad visual. Nuestro
                             objetivo es apoyar a estudiantes y profesionales del diseño en la construcción de
                             experiencias digitales más inclusivas y funcionales.</p>
-                            <a href="acercade.html"><button>Conoce más</button></a>
+                        <a href="acercade.html"><button>Conoce más</button></a>
                     </div>
 
                     <div id="contenedor-parallax">
-                    <div id="parallax">
+                        <div id="parallax">
+                        </div>
                     </div>
-                </div>
                 </div>
             </section>
 
@@ -117,6 +130,13 @@
                 <h1 class="titulo morado">HERRAMIENTAS</h1>
                 <p class="parrafo morado">Explora una colección de herramientas diseñadas para crear sitios web más
                     accesibles.</p>
+
+                <div id="contenedor-slider">
+                    <img src="recursos/azul.png">
+                    <img id="my-img" src="recursos/morado.png">
+                    <input type="range" min="0" max="100" value="50" id="slider" oninput="slide()">
+                </div>
+
                 <button><a href="herramientas.html">Explorar</a></button>
             </section>
 
@@ -186,15 +206,15 @@
             </div>
             <div class="div-footer">
                 <ul>
-                    <li><a>Inicio</a></li>
-                    <li><a>Acerca de</a></li>
-                    <li><a>Herramientas</a></li>
+                    <li><a href="#principal">Inicio</a></li>
+                    <li><a href="#acercade">Acerca de</a></li>
+                    <li><a href="#herramientas">Herramientas</a></li>
                 </ul>
             </div>
             <div class="div-footer">
                 <ul>
-                    <li><a>Recursos</a></li>
-                    <li><a>Contacto</a></li>
+                    <li><a href="#recursos">Recursos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                     <li><a>Política de privacidad</a></li>
                 </ul>
             </div>
@@ -209,6 +229,8 @@
     </main>
 </body>
 <script src="js/nav.js"></script>
+<script src="js/navInicio.js"></script>
+<script src="js/numeros.js"></script>
 <script src="js/parallax.js"></script>
 <script src="js/contacto.js"></script>
 

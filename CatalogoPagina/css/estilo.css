@@ -13,43 +13,10 @@
 
     --blanco: #FBFBFA;
     --negro: #1A1A1A;
-
-
-
 }
 
 :root {
     font-size: 12px;
-}
-
-/* Protanopía */
-body.protanopia *{
-    --azul: #38A0C8;   /* Azul más distinguible */
-    --morado: #7070EB; /* Morado más claro */
-    --verde: #C6C799;  /* Verde amarillento más distinguible */
-    --gris: #797371;
-    --blanco: #FBFBFA;
-    --negro: #1A1A1A;
-}
-
-/* Deuteranopía */
-body.deuteranopia *{
-    --azul: #38A0C8;
-    --morado: #7070EB;
-    --verde: #C6C799;
-    --gris: #797371;
-    --blanco: #FBFBFA;
-    --negro: #1A1A1A;
-}
-
-/* Tritanopía */
-body.tritanopia *{
-    --azul: #38A086;   /* Verde-azulado */
-    --morado: #AF8C78; /* Color más distinguible en la gama del morado */
-    --verde: #C6C799;
-    --gris: #6c564e;
-    --blanco: #FBFBFA;
-    --negro: #1A1A1A;
 }
 
 @font-face {
@@ -115,6 +82,11 @@ label {
     text-align: left;
 }
 
+.titulo-1{
+    font-size: 4rem;
+    font-weight: 600;
+}
+
 .titulo-2{
     font-size: 2.3rem;
     font-weight: 600;
@@ -151,25 +123,39 @@ label {
     color: var(--negro);
 }
 
+.link{
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-skip: edges;
+    padding: 5px;
+}
+
+.link:hover{
+    cursor: pointer;
+    background-color: var(--morado);
+    color: var(--blanco);
+}
+
 button {
     width: 150px;
     border: none;
     padding: 8px;
     border-radius: 5px;
     background-color: var(--verde);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    transition: 0.5s ease;
     font-family: 'SegoeUI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.3rem;
     color: var(--morado);
     font-weight: 700;
+    box-shadow: none;
 }
 
 button:hover {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     cursor: pointer;
-    transition: 0.5s;
-    filter: blur(1px);
+    transition: 0.3s ease;
 }
 
 nav {

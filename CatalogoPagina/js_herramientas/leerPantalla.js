@@ -38,7 +38,13 @@ function obtenerDescripcionElemento(elemento) {
   } else if (nombreElemento === "button") {
     descripcionTipo = "botón";
   } else if (nombreElemento === "img") {
-    descripcionTipo = "imagen";
+    // Aquí es donde se agrega la lógica para leer el atributo 'alt' de la imagen
+    let altTexto = elemento.getAttribute("alt");
+    if (altTexto) {
+      descripcionTipo = "Imagen: " + altTexto;
+    } else {
+      descripcionTipo = "Imagen sin descripción";
+    }
   } else if (nombreElemento === "div") {
     if (elemento.classList.contains("slider")) {
       descripcionTipo = "interruptor";
@@ -55,13 +61,13 @@ function obtenerDescripcionElemento(elemento) {
     descripcionTipo = nombreElemento;
   }
 
-  return descripcionTipo ? "Tipo de elemento: " + descripcionTipo : "";
+  return descripcionTipo ? `Tipo de elemento: ${descripcionTipo}` : "";
 }
 
 function manejarMouseEncima(evento) {
   clearTimeout(temporizadorEncima);
   
-  if (Date.now() - tiempoUltimoClic < 500) return; // evitar leer después de un clic y 500ms
+  if (Date.now() - tiempoUltimoClic < 500) return; 
   
   temporizadorEncima = setTimeout(() => {
     const objetivo = evento.target;
@@ -80,34 +86,25 @@ function manejarMouseFuera() {
 function activarLector() {
   document.addEventListener("mouseover", manejarMouseEncima);
   document.addEventListener("mouseout", manejarMouseFuera);
+  document.body.style.cursor = "url('./recursos/cursor-lector.png'), auto";
 }
 
 function desactivarLector() {
   document.removeEventListener("mouseover", manejarMouseEncima);
   document.removeEventListener("mouseout", manejarMouseFuera);
   window.speechSynthesis.cancel();
+  document.body.style.cursor = "default";
 }
+
+window.addEventListener("beforeunload", desactivarLector);
 
 document.addEventListener("change", function(evento) {
   if (evento.target && evento.target.matches('input[type="checkbox"][id="lectorSwitch"]')) {
     const lectorSwitch = evento.target;
     if (lectorSwitch.checked) {
       activarLector();
-      localStorage.setItem("lectorHabilitado", "true");
     } else {
       desactivarLector();
-      localStorage.setItem("lectorHabilitado", "false");
-    }
-  }
-});
-
-document.addEventListener("DOMContentLoaded", function() {
-  const lectorHabilitado = localStorage.getItem("lectorHabilitado") === "true";
-  if (lectorHabilitado) {
-    activarLector();
-    const lectorSwitch = document.getElementById("lectorSwitch");
-    if (lectorSwitch) {
-      lectorSwitch.checked = true;
     }
   }
 });

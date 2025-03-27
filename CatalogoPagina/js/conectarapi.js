@@ -31,15 +31,19 @@ document.addEventListener("DOMContentLoaded", () => {
             isManualClick = true;
             buscador.value = ""; //limpia el input
 
+            if (window.desactivarLector ) {
+                window.desactivarLector();
+            }
+
             //quita la clase highcontrast al seleccionar otra categoria
             document.body.classList.remove("high-contrast");
-            localStorage.setItem("highContrast", "false");
 
             //quita la clase de daltonismo al seleccionar otra categoria
             document.body.classList.remove("protanopia", "deuteranopia", "tritanopia");
-            localStorage.setItem("protanopia", "false");
-            localStorage.setItem("deuteranopia", "false");
-            localStorage.setItem("tritanopia", "false");
+
+            //quita la clase al seleccionar otra categoria
+            document.body.classList.remove("high-contrast");
+            document.body.classList.remove("modo-lectura");
 
             // Extraer el label y la categoria correspondiente
             const categoryLabel = link.textContent.trim();
@@ -79,6 +83,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
                                 // Si la herramienta tiene un switch se lo incluye
                                 let switchHTML = "";
+                                let buttonHTML = "";
+
+                                //url
+                                let urlHTML = "";
+                                if (details.url_herramienta) {
+                                    urlHTML = `<p class="parrafo negro"><a href="${details.url_herramienta}" target="_blank" class="morado parrafo link">Saber más</a></p>`;
+                                } else {
+                                    urlHTML = "<p class='parrafo negro'>URL no disponible</p>"; 
+                                }
+
                                 if (details.switch_id) {
                                     switchHTML =
                                         `<label class="switch">
@@ -100,17 +114,24 @@ document.addEventListener("DOMContentLoaded", () => {
                                     </label>`;
                                 }
 
+                                if (details.button_id) {
+                                    buttonHTML = `
+                                        <button id="${details.button_id}" class="btn-probar">Probar</button>`;
+                                }
+
                                 // Armamos el contenido interno de la tarjeta
                                 card.innerHTML = `
                                 <div id="img-switch-div">
-                                <img src="${details.imagen}" class="img-herramienta">
+                                <div class="img-herramienta"><img src="${details.imagen}"></div>
                                 ${switchHTML}
+                                ${buttonHTML}
                                 </div>
                     <p class="morado titulo-3">${details.titulo}</p>
                     <p class="titulo-3 negro">${details.subtitulo}</p>
                     <p class="parrafo negro">${details.descripcion}</p>
                     <p class="parrafo negro">Características destacadas:</p>
-                    <ul>${caracteristicasHTML}</ul>`;
+                    <ul>${caracteristicasHTML}</ul>
+                    ${urlHTML}`;
 
                                 // Añadimos la tarjeta al contenedor de tarjetas
                                 cardsContainer.appendChild(card);

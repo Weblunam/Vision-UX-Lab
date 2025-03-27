@@ -2,20 +2,7 @@
 
 #herramientas-header {
     height: 650px;
-    /* aqui cambiar el color de fondo */
     background: linear-gradient(300deg, rgba(0, 122, 187, 0.7) 0%, rgba(75, 67, 202, 0.7) 30%, rgba(0, 122, 187, 0.7) 60%, rgba(75, 67, 202, 0.7) 100%);
-    
-    /* Protanopía 
-    background: linear-gradient(300deg, rgba(56, 160, 200, 0.7) 0%, rgba(112, 112, 235, 0.7) 30%, rgba(56, 160, 200, 0.7) 60%, rgba(112, 112, 235, 0.7) 100%);
-    */ 
-
-    /* Deuteranopía *
-    background: linear-gradient(300deg, rgba(56, 160, 200, 0.7) 0%, rgba(112, 112, 235, 0.7) 30%, rgba(56, 160, 200, 0.7) 60%, rgba(112, 112, 235, 0.7) 100%);
-    */ 
-
-    /* Tritanopía 
-    background: linear-gradient(300deg, rgba(56, 160, 140, 0.7) 0%, rgba(175, 140, 120, 0.7) 30%, rgba(56, 160, 140, 0.7) 60%, rgba(175, 140, 120, 0.7) 100%);
-    */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,7 +47,7 @@
 }
 
 .categoria {
-    width: 125px;
+    width: 135px;
     height: 220px;
     text-align: center;
     transition: 0.7s ease;
@@ -68,7 +55,7 @@
 
 .img-categoria {
     width: 100%;
-    height: 125px;
+    height: 135px;
     background-color: var(--blanco);
     border-radius: 15px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -107,50 +94,24 @@
 }
 
 #probar-herramientas-seccion {
-    /* aqui cambiar el color de fondo */
     background: linear-gradient(315deg, rgba(251, 251, 250, 0.5) 0%, rgba(0, 122, 187, 0.5) 20%, rgba(75, 67, 202, 0.5) 80%, rgba(251, 251, 250, 0.5) 100%);
-    
-    /* Protanopía *
-    background: linear-gradient(315deg, rgba(251, 251, 250, 0.5) 0%, rgba(56, 160, 200, 0.5) 20%, rgba(112, 112, 235, 0.5) 80%, rgba(251, 251, 250, 0.5) 100%);
-
-    /* Deuteranopía *
-    background: linear-gradient(315deg, rgba(251, 251, 250, 0.5) 0%, rgba(56, 160, 200, 0.5) 20%, rgba(112, 112, 235, 0.5) 80%, rgba(251, 251, 250, 0.5) 100%);
-
-    /* Tritanopía *
-    background: linear-gradient(315deg, rgba(251, 251, 250, 0.5) 0%, rgba(56, 160, 140, 0.5) 20%, rgba(175, 140, 120, 0.5) 80%, rgba(251, 251, 250, 0.5) 100%);
-    */
-
     justify-content: center;
     align-items: center;
     display: none;
+    border-top: 2px solid var(--blanco);
+    transition: 0.3s ease;
 }
 
 #probar-herramientas-contenedor {
     width: 95%;
     background-color: rgba(251, 251, 250, 0.9);
     border-radius: 30px;
-
-    /* aqui cambiar el color de fondo */
     border-right: 5px solid rgba(75, 67, 202, 0.5);
     border-bottom: 5px solid rgba(75, 67, 202, 0.5);
-
-    /* -----------   */
-    /* Protanopía *
-    border-right: 5px solid rgba(112, 112, 235, 0.5);
-    border-bottom: 5px solid rgba(112, 112, 235, 0.5);
-
-    /* Deuteranopía *
-    border-right: 5px solid rgba(112, 112, 235, 0.5);
-    border-bottom: 5px solid rgba(112, 112, 235, 0.5);
-
-    /* Tritanopía *
-    border-right: 5px solid rgba(175, 140, 120, 0.5);
-    border-bottom: 5px solid rgba(175, 140, 120, 0.5);
-    */
-
     margin: 50px;
     padding-bottom: 50px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: 0.3s ease;
 }
 
 #uso-de-herramientas {
@@ -224,8 +185,8 @@
 #texto-categoria {
     height: 130px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #texto-categoria h2,
@@ -233,6 +194,11 @@ p {
     padding-left: 30px;
     padding-right: 450px;
     padding-bottom: 5px;
+}
+
+#texto-categoria button{
+    width:20%;
+    margin-right: 30px;
 }
 
 #contenedor-herramientas {
@@ -263,8 +229,9 @@ p {
     opacity: 0;
     transform: translateY(10px);
 
-    /* Efecto de subida */
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    /* efecto de subida */
+    transition: opacity 0.8s ease-out, 
+    transform 0.8s ease-out, background-color 0.5s ease;
 }
 
 .herramienta.fade-in {
@@ -287,27 +254,21 @@ p {
 
 .img-herramienta {
     width: 18%;
-    border-radius: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: var(--gris);
+    transition: 0.5s ease;
+}
+
+.img-herramienta img{
+    width: 100%;
 }
 
 .switch {
     --switch-width: 46px;
     --switch-height: 24px;
-    --switch-bg: rgb(131, 131, 131);
-    /* aqui cambiar el color de fondo */
+    --switch-bg: var(--gris);
     --switch-checked-bg: rgb(0, 218, 80);
-    
-    /* -----------   */
-    /* Protanopía *
-    --switch-checked-bg: rgb(56, 230, 150);
-
-    /* Deuteranopía *
-    --switch-checked-bg: rgb(56, 230, 150);
-
-    /* Tritanopía *
-    --switch-checked-bg: rgb(160, 220, 160);
-    */
-
     --switch-offset: calc((var(--switch-height) - var(--circle-diameter)) / 2);
     --switch-transition: all .2s cubic-bezier(0.27, 0.2, 0.25, 1.51);
 
@@ -328,6 +289,8 @@ p {
     --effect-bg: var(--circle-bg);
     --effect-border-radius: 1px;
     --effect-transition: all .2s ease-in-out;
+
+    transition: 0.5s ease;
 }
 
 .switch input {
@@ -442,5 +405,11 @@ p {
     left: calc(100% - var(--circle-diameter) - var(--switch-offset));
     -webkit-box-shadow: var(--circle-checked-shadow);
     box-shadow: var(--circle-checked-shadow);
+}
+
+/* botón probar */
+
+.btn-probar{
+    width:20%;
 }
 
