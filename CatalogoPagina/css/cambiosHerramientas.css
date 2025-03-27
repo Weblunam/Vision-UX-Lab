@@ -52,7 +52,13 @@ body.tritanopia {
 }
 
 .high-contrast .herramienta .img-herramienta{
+    transition: ease 0.5s;
     background-color: #121212;
+}
+
+.high-contrast .herramienta a{
+    transition: ease 0.5s;
+    color: #f3f3f3; 
 }
 
 
