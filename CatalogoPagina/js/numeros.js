@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     function animateNumber(numberElement, target) {
         let current = 0;
-        const duration = 2500; 
+        const duration = 3500; 
         const increment = target / (duration / 50); 
 
         const interval = setInterval(() => {
@@ -26,6 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 observer.unobserve(entry.target); 
             }
         });
-    }, { threshold: 0.9 }); 
+    }, { threshold: 0.6 }); 
     observer.observe(document.querySelector('#numeros'));
 });
