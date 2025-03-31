@@ -201,7 +201,7 @@
 
 #recursos {
     background-color: var(--azul);
-    height: 450px;
+    height: 500px;
 }
 
 #contenedor-recursos {
@@ -230,8 +230,8 @@
     margin-bottom: 10px;
 }
 
-.img-recurso>img {
-    width: 80%;
+.img-recurso> a img {
+    width: 100%;
 }
 
 #contenedor-recursos:hover .recurso {

@@ -1,0 +1,10 @@
+@import url(estilo.css);
+
+#recursos-header{
+    height:300px;
+    background-color: var(--azul);
+    background-image: url(../recursos/fondo.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: right;
+}

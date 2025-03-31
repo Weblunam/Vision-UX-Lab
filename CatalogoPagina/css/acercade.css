@@ -77,6 +77,12 @@
     background-color: var(--azul);
 }
 
+#banner{
+    background-image: url(../recursos/fondo-opacidad.png);
+    background-size: 75%;
+    background-position: center;
+}
+
 #banner-header {
     height: 400px;
 }
