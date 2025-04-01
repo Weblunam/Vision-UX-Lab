@@ -159,3 +159,22 @@ body.modo-lectura .switch .circle {
 .modo-lectura .img-herramienta{
     opacity: 0;
 }
+
+/* fuente dislexia */
+
+@font-face {
+    font-family: "OpenDyslexic";
+    src: url(../recursos/opendyslexic.otf);
+}
+
+.fuente-dislexia {
+    font-family: "OpenDyslexic";
+}
+
+/* filtro protector de la vista */
+
+.filtro-activado {
+    filter: brightness(0.8) contrast(1.2) saturate(0.8) sepia(0.2);
+    background-color: #f4f4f4;
+}
+

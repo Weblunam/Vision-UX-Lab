@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     //Funcion para mapear el texto del enlace junto con la clave del JSON
     function mapCategoryLabel(label) {
         switch (label) {
-            case "Pruebas de Accesibilidad":
+            case "Pruebas de accesibilidad":
                 return "accesibilidadWeb";
             case "Diseño de interfaces":
                 return "disenoDeInterfaces";

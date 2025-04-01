@@ -165,7 +165,7 @@
           "titulo": "Espaciado de texto",
           "subtitulo": "Mejora la legibilidad ajustando el espacio entre palabras y líneas.",
           "descripcion": "Modifica el interlineado, el espaciado entre caracteres y el espacio entre palabras para facilitar la lectura.",
-          "imagen": "https://i.imgur.com/nmFYkxR.png",
+          "imagen": "https://i.imgur.com/wmnfcto.png",
           "caracteristicas": [
             "Ajuste automático de espaciado.",
             "Ayuda a personas con dificultades de lectura.",
@@ -201,6 +201,34 @@
           ],
           "url_herramienta": "https://randoma11y.com/",
           "button_id": "paletaColoresButton"
+        },
+        {
+          "id": 5,
+          "titulo": "OpenDyslexic",
+          "subtitulo": "Fuente diseñada para facilitar la lectura a personas con dislexia.",
+          "descripcion": "Sus letras tienen una base más pesada para evitar la inversión de caracteres y mejorar la fluidez en la lectura.",
+          "imagen": "https://i.imgur.com/nmFYkxR.png",
+          "caracteristicas": [
+            "Se puede integrar en sitios web para mejorar la accesibilidad del texto.",
+            "Ayuda a mejorar la legibilidad.",
+            "Reduce la confusión entre caracteres similares."
+          ],
+          "url_herramienta": "https://antijingoist.itch.io/opendyslexic",
+          "switch_id": "dislexiaSwitch"
+        },
+        {
+          "id": 6,
+          "titulo": "Filtro protector de la vista",
+          "subtitulo": "Filtro protector para la fatiga visual.",
+          "descripcion": "Permite activar un filtro protector para reducir la fatiga visual, ajustando el brillo, contraste y saturación de la página.",
+          "imagen": "https://i.imgur.com/2TcxFrX.png",
+          "caracteristicas": [
+            "Filtro de brillo y contraste ajustable.",
+            "Reduce la saturación para un fondo más suave.",
+            "Descanso visual prolongado."
+          ],
+          "url_herramienta": "https://developer.mozilla.org/es/docs/Web/CSS/filter",
+          "switch_id": "protectorVistaSwitch"
         }
       ]
     },

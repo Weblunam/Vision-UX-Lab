@@ -11,11 +11,11 @@ function aumentarTamanoTexto() {
         let tamañoActual = parseFloat(window.getComputedStyle(elemento).fontSize);
         let lineHeightActual = parseFloat(window.getComputedStyle(elemento).lineHeight);
 
-        // Calcular nuevos valores aumentando un 10%
+        // calcular nuevos valores aumentando un 10%
         let nuevoTamaño = tamañoActual * 1.1;
         let nuevoLineHeight = lineHeightActual * 1.1;
 
-        // Aplicar los nuevos valores
+        // aplicar los nuevos valores
         elemento.style.fontSize = nuevoTamaño + "px";
         elemento.style.lineHeight = nuevoLineHeight + "px";
     });
