@@ -1,10 +1,55 @@
 @import url(estilo.css);
 
-#recursos-header{
-    height:300px;
-    background-color: var(--azul);
-    background-image: url(../recursos/fondo.png);
-    background-size: 60%;
-    background-repeat: no-repeat;
-    background-position: right;
+#recursos-header {
+    height: 300px;
+    background: url(../recursos/fondo.png), linear-gradient(90deg, rgba(0, 122, 187, 1) 0%, rgba(251, 251, 250, 1) 85%);
+    background-size: 60%, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: right, left; 
+    border-bottom: 1.5px solid var(--blanco);
 }
+
+#recursos section{
+    border-bottom: 1.5px solid var(--blanco);
+    background-color: var(--morado);
+    position: relative;
+    overflow: hidden;
+}
+
+#recursos section:last-of-type{
+    border:0;
+}
+
+#recursos section:nth-child(odd){
+    background-color: var(--azul);
+}
+
+#recursos section img{
+    width:15%;
+    position: absolute;
+    right:-3%;
+    top:35px;
+    transition: 0.3s ease;
+}
+
+.flex-recursos{
+    margin-left: 9%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding:35px;
+    padding-left: 0;
+    padding-right: 450px;
+}
+
+.flex-recursos ul{
+    display: flex;
+    gap: 20px;
+}
+
+.flex-recursos ul li a{
+    transition: 0.5s ease;
+}
+
+
+

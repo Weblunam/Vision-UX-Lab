@@ -240,8 +240,22 @@
 <script src="js/navInicio.js"></script>
 <script src="js/numeros.js"></script>
 <script src="js/graficas.js"></script>
-<script src="js/parallax.js"></script>
 <script src="js/contacto.js"></script>
 <script src="https://kit.fontawesome.com/d47799ae54.js" crossorigin="anonymous"></script>
+
+<script>
+    window.addEventListener('scroll', function () {
+    let parallax = document.querySelector('#parallax');
+    let scrollY = window.scrollY;
+    parallax.style.right = scrollY * 0.35 + "px";
+});
+</script>
+
+<script>
+    function slide(){
+    let slideValue = document.getElementById("slider").value;
+    document.getElementById("my-img").style.clipPath = "polygon(0 0," + slideValue + "% 0," + slideValue + "% 100%, 0 100%)";
+}
+</script>
 
 </html>
