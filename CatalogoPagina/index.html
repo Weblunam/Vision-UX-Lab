@@ -13,9 +13,8 @@
 
 <body>
     <main class="animate__animated animate__fadeIn">
-        <nav>
+        <nav id="nav-escritorio">
             <ul>
-                <li><i class="fa-solid fa-bars"></i></li>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="#acercade">Acerca de</a></li>
                 <li><a href="#herramientas">Herramientas</a></li>
@@ -24,10 +23,23 @@
             </ul>
         </nav>
 
-        <section id="principal">
+        <nav id="nav-responsiva">
+            <ul>
+                <li id="menu-icon" onclick="abrirNavResponsiva()"><i class="fa-solid fa-bars"></i></li>
+                <li id="close-icon" onclick="cerrarNavResponsiva()"><i class="fa fa-times"></i></li>
+                <li><a href="index.html" onclick="cerrarNavResponsiva()">Inicio</a></li>
+                <li><a href="#acercade" onclick="cerrarNavResponsiva()">Acerca de</a></li>
+                <li><a href="#herramientas" onclick="cerrarNavResponsiva()">Herramientas</a></li>
+                <li><a href="#recursos" onclick="cerrarNavResponsiva()">Recursos</a></li>
+                <li><a href="#formulario" onclick="cerrarNavResponsiva()">Contacto</a></li>
+            </ul>
+        </nav>
 
+        <section id="principal">
             <section id="inicio">
-                <img id="inicio-img" class="img-header" src="recursos/interfaz1.png">
+                <div id="inicio-img">
+                    <img class="img-header" src="recursos/interfaz1.png">
+                </div>
                 <div id="inicio-header" class="header">
                     <div class="seccion-header">
                         <div>
@@ -50,22 +62,22 @@
                 <section id="numeros">
                     <div class="numero">
                         <p class="parrafo negro">El</p>
-                        <h1 class="morado">86%</h1>
+                        <h1 class="morado titulo-secciones">86%</h1>
                         <p class="parrafo negro">de las páginas de inicio tenían texto de bajo contraste</p>
                     </div>
                     <div class="numero">
                         <p class="parrafo negro">Al</p>
-                        <h1 class="azul">26%</h1>
+                        <h1 class="azul titulo-secciones">26%</h1>
                         <p class="parrafo negro">de las imágenes les faltaba texto alternativo</p>
                     </div>
                     <div class="numero">
                         <p class="parrafo negro">El</p>
-                        <h1 class="morado">97%</h1>
+                        <h1 class="morado titulo-secciones">97%</h1>
                         <p class="parrafo negro">de las páginas de inicio tenían fallas de WCAG</p>
                     </div>
                     <div class="numero">
                         <p class="parrafo negro">Solo el</p>
-                        <h1 class="azul">03%</h1>
+                        <h1 class="azul titulo-secciones">03%</h1>
                         <p class="parrafo negro">de la web es accesible</p>
                     </div>
                 </section>
@@ -80,6 +92,7 @@
                             <h1 class="titulo"><i class="fa-solid fa-magnifying-glass-plus"></i></h1>
                             <div class="grafica grafica-1">
                                 <h1 class="blanco titulo-1">MIOPÍA</h1>
+                                <i class="fa-solid fa-magnifying-glass-plus titulo-1"></i>
                                 <p class="parrafo blanco">Los rayos de luz pasan por delante de la retina en lugar de
                                     hacerlo sobre ella, lo que se traduce en una dificultad para ver los objetos que
                                     están lejos.</p>
@@ -90,6 +103,7 @@
                             <h1 class="titulo"><i class="fa-solid fa-eye-slash"></i></h1>
                             <div class="grafica grafica-2">
                                 <h1 class="blanco titulo-1">PRESBICIA</h1>
+                                <i class="fa-solid fa-eye-slash titulo-1"></i>
                                 <p class="parrafo blanco">Esta es una condición que ocurre con el envejecimiento,
                                     definida como la incapacidad de enfocar las cosas de cerca. Empieza de manera
                                     natural en personas mayores de 35 años.</p>
@@ -100,6 +114,7 @@
                             <h1 class="morado titulo"><i class="fa-solid fa-crosshairs"></i></h1>
                             <div class="grafica grafica-3">
                                 <h1 class="blanco titulo-1">ASTIGMATISMO</h1>
+                                <i class="fa-solid fa-crosshairs titulo-1"></i>
                                 <p class="parrafo blanco">Ocurre cuando el ojo en lugar de ser redondo tiene una forma
                                     más alargada y genera visión borrosa a cualquier distancia.</p>
                             </div>
@@ -109,6 +124,7 @@
                             <h1 class="morado titulo"><i class="fa-solid fa-magnifying-glass-minus"></i></h1>
                             <div class="grafica grafica-4">
                                 <h1 class="blanco titulo-1">HIPERMETROPÍA</h1>
+                                <i class="fa-solid fa-magnifying-glass-minus titulo-1"></i>
                                 <p class="parrafo blanco">Los rayos de luz pasan por detrás de la retina, ocasionando
                                     una visión borrosa de cerca, mientras que los objetos lejanos se pueden ver con
                                     claridad.</p>
@@ -121,7 +137,7 @@
             <section id="acercade">
                 <div id="acercade-header" class="header">
                     <div class="seccion-header">
-                        <h1 class="titulo morado">ACERCA DE</h1>
+                        <h1 class="titulo-secciones morado">ACERCA DE</h1>
                         <p class="parrafo negro">Este catálogo reúne herramientas que facilitan la creación de
                             sitios web accesibles, especialmente para personas con discapacidad visual. Nuestro
                             objetivo es apoyar a estudiantes y profesionales del diseño en la construcción de
@@ -137,14 +153,16 @@
             </section>
 
             <section id="herramientas" class="seccion-flex">
-                <h1 class="titulo morado">HERRAMIENTAS</h1>
+                <h1 class="titulo-secciones morado">HERRAMIENTAS</h1>
                 <p class="parrafo morado">Explora una colección de herramientas diseñadas para crear sitios web más
                     accesibles.</p>
 
-                <div id="contenedor-slider">
-                    <img src="recursos/azul.png">
-                    <img id="my-img" src="recursos/morado.png">
-                    <input type="range" min="0" max="100" value="50" id="slider" oninput="slide()">
+                <div id="antes-despues">
+                    <div id="contenedor-slider">
+                        <img src="recursos/azul.png">
+                        <img id="my-img" src="recursos/morado.png">
+                        <input type="range" min="0" max="100" value="50" id="slider" oninput="slide()">
+                    </div>
                 </div>
 
                 <button><a href="herramientas.html">Explorar</a></button>
@@ -152,7 +170,7 @@
 
             <section id="recursos" class="header">
                 <div class="seccion-flex">
-                    <h1 class="titulo blanco">RECURSOS</h1>
+                    <h1 class="titulo-secciones blanco">RECURSOS</h1>
                     <p class="parrafo blanco">Encuentra guías, artículos y materiales para aprender sobre accesibilidad
                         web
                         y mejorar tus proyectos de diseño inclusivo.</p>
@@ -188,20 +206,20 @@
 
             <section id="contacto">
                 <section class="seccion-flex">
-                    <h1 class="titulo morado">CONTACTO</h1>
+                    <h1 class="titulo-secciones morado">CONTACTO</h1>
                     <p class="parrafo morado">¿Conoces una herramienta que debería estar en este catálogo? ¿Tienes dudas
                         sobre accesibilidad en el diseño web?</p>
                     <p class="parrafo morado">Déjanos tu sugerencia o pregunta y trabajaremos para mejorar este espacio.
                     </p>
                     <section id="formulario">
                         <form action="envia.php" method="post">
-                            <p class="morado">Nombre:</p>
+                            <p class="morado parrafo">Nombre:</p>
                             <input type="text" name="nombre" placeholder="Escribe tu nombre:" required>
-                            <p class="morado">Apellidos:</p>
+                            <p class="morado parrafo">Apellidos:</p>
                             <input type="text" name="apellido" placeholder="Escribe tus apellidos:" required>
-                            <p class="morado">Correo electrónico:</p>
+                            <p class="morado parrafo">Correo electrónico:</p>
                             <input type="text" name="correo" placeholder="Escribe tu correo electrónico:" required>
-                            <p class="morado">Mensaje:</p>
+                            <p class="morado parrafo">Mensaje:</p>
                             <textarea name="mensaje" placeholder="Escribe tu mensaje:" required></textarea>
                             <input type="button" value="Enviar">
                         </form>
@@ -247,17 +265,17 @@
 
 <script>
     window.addEventListener('scroll', function () {
-    let parallax = document.querySelector('#parallax');
-    let scrollY = window.scrollY;
-    parallax.style.right = scrollY * 0.35 + "px";
-});
+        let parallax = document.querySelector('#parallax');
+        let scrollY = window.scrollY;
+        parallax.style.right = scrollY * 0.35 + "px";
+    });
 </script>
 
 <script>
-    function slide(){
-    let slideValue = document.getElementById("slider").value;
-    document.getElementById("my-img").style.clipPath = "polygon(0 0," + slideValue + "% 0," + slideValue + "% 100%, 0 100%)";
-}
+    function slide() {
+        let slideValue = document.getElementById("slider").value;
+        document.getElementById("my-img").style.clipPath = "polygon(0 0," + slideValue + "% 0," + slideValue + "% 100%, 0 100%)";
+    }
 </script>
 
 </html>

@@ -1,21 +1,162 @@
-/* nav */
 
 @media screen and (min-width: 360px) and (max-width: 640px) {
-    nav ul{
-        flex-direction: column;
+    .titulo {
+        font-size: 4.8rem;
     }
-    nav ul li:nth-child(1){
-        display: block;
+
+    .titulo-secciones {
+        font-size: 4rem;
     }
-    
-    nav ul li:not(:nth-child(1)){
+
+    .subtitulo {
+        font-size: 1.4rem;
+    }
+
+    .parrafo {
+        font-size: 1.1rem;
+        line-height: 18px;
+    }
+
+    button {
+        width: 110px;
+        font-size: 1.2rem;
+    }
+
+    .seccion-header {
+        width: 70%;
+    }
+
+    #nav-escritorio{
         display: none;
     }
-    nav ul li i{
-        color:var(--morado);
-        transform: scale(1.8);
+    
+    #nav-responsiva{
+        display: block !important;
     }
-    .seccion-header{
-        width:70%;
+
+    #inicio-header {
+        margin-bottom: 240px;
+    }
+
+    #inicio-img {
+        width: 300px;
+        float: none;
+        top: 310px;
+        margin: 0 auto;
+    }
+
+    #estadisticas h2 {
+        width: 80%;
+        padding-bottom: 20px;
+    }
+
+    #numeros {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .numero {
+        width: 50%;
+    }
+
+    .div-grafica h1 i {
+        display: none;
+    }
+
+    .grafica h1 {
+        padding-left: 10px;
+    }
+
+    .grafica .titulo-1 {
+        font-size: 2.5rem;
+    }
+
+    .grafica p {
+        display: none;
+    }
+
+    .grafica i {
+        display: block;
+    }
+
+    #acercade-header {
+        height: inherit;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    #contenedor-parallax {
+        display: none;
+    }
+
+    .seccion-flex {
+        width: 100%;
+        gap: 15px;
+    }
+
+    .seccion-flex p {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    #herramientas {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    #herramientas .titulo-secciones {
+        font-size: 3.5rem;
+    }
+
+    #antes-despues {
+        height: 190px;
+    }
+
+    #slider {
+        height: 190px;
+    }
+
+    #slider::-webkit-slider-thumb {
+        width: 30px;
+        height: 30px;
+    }
+
+    #slider::-moz-range-thumb {
+        width: 30px;
+        height: 30px;
+    }
+
+    #contenedor-recursos {
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .recurso {
+        width: 110px;
+        height: 170px;
+    }
+
+    .recurso label {
+        height: 35px;
+    }
+
+    .img-recurso {
+        height: 110px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .div-footer {
+        width: 100%;
+    }
+
+    .div-footer ul li {
+        text-align: center;
     }
 }

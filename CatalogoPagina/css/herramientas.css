@@ -1,7 +1,12 @@
 @import url(estilo.css);
 
+#herramientas{
+    padding-top: 60px;
+}
+
 #herramientas-header {
-    height: 650px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     background: linear-gradient(300deg, rgba(0, 122, 187, 0.7) 0%, rgba(75, 67, 202, 0.7) 30%, rgba(0, 122, 187, 0.7) 60%, rgba(75, 67, 202, 0.7) 100%);
     display: flex;
     justify-content: center;
@@ -10,7 +15,6 @@
 
 #contenedor-header-herramientas {
     width: 60%;
-    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;

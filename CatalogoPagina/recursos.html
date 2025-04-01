@@ -7,18 +7,31 @@
     <title>Recursos - Vision UX Lab</title>
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/recursos.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
 <body>
     <main class="animate__animated animate__fadeIn">
-        <nav>
+        <nav id="nav-escritorio">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="acercade.html">Acerca de</a></li>
                 <li><a href="herramientas.html">Herramientas</a></li>
                 <li class="active-li"><a>Recursos</a></li>
                 <li><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <nav id="nav-responsiva">
+            <ul>
+                <li id="menu-icon" onclick="abrirNavResponsiva()"><i class="fa-solid fa-bars"></i></li>
+                <li id="close-icon" onclick="cerrarNavResponsiva()"><i class="fa fa-times"></i></li>
+                <li><a href="index.html" onclick="cerrarNavResponsiva()">Inicio</a></li>
+                <li><a href="acercade.html" onclick="cerrarNavResponsiva()">Acerca de</a></li>
+                <li><a href="herramientas.html" onclick="cerrarNavResponsiva()">Herramientas</a></li>
+                <li><a href="recursos.html" onclick="cerrarNavResponsiva()">Recursos</a></li>
+                <li><a href="index.html#formulario" onclick="cerrarNavResponsiva()">Contacto</a></li>
             </ul>
         </nav>
 
@@ -35,7 +48,7 @@
                 <section id="contraste-y-color">
                     <img src="recursos/sticker-contraste.png" />
                     <div class="flex-recursos">
-                        <h1 class="blanco titulo">CONTRASTE Y COLOR</h1>
+                        <h1 class="blanco titulo-secciones">CONTRASTE Y COLOR</h1>
                         <p class="parrafo blanco">Tener un buen contraste de color en tu sitio web beneficia a todos tus
                             usuarios, pero es particularmente beneficioso para los que tienen cierto tipo de ceguera al
                             color y otras afecciones similares, como los que experimentan una baja sensibilidad al
@@ -62,7 +75,7 @@
                 <section id="html-y-aria">
                     <img src="recursos/sticker-html.png" />
                     <div class="flex-recursos">
-                        <h1 class="blanco titulo">HTML Y ARIA</h1>
+                        <h1 class="blanco titulo-secciones">HTML Y ARIA</h1>
                         <p class="parrafo blanco">Accessible Rich Internet Applications (ARIA) es una colección de
                             atributos que definen como realizar contenido y aplicaciónes web (especialmente las
                             desarrolladas con Javascript) más accesibles para las personas con discapacidades.</p>
@@ -90,7 +103,7 @@
                 <section id="pruebas-accesibilidad">
                     <img src="recursos/sticker-accesibilidad.png" />
                     <div class="flex-recursos">
-                        <h1 class="blanco titulo">PRUEBAS DE ACCESIBILIDAD</h1>
+                        <h1 class="blanco titulo-secciones">PRUEBAS DE ACCESIBILIDAD</h1>
                         <p class="parrafo blanco">Cuando los sitios y herramientas web están bien diseñados y
                             codificados, las personas con discapacidad pueden utilizarlos. Sin embargo, en la actualidad
                             muchos sitios y herramientas están desarrollados incluyendo barreras de accesibilidad que
@@ -126,7 +139,7 @@
                 <section id="tipografia">
                     <img src="recursos/sticker-tipografia.png" />
                     <div class="flex-recursos">
-                        <h1 class="blanco titulo">TIPOGRAFÍA</h1>
+                        <h1 class="blanco titulo-secciones">TIPOGRAFÍA</h1>
                         <p class="parrafo blanco">Existe cierta tendencia entre los diseñadores a creer que el texto pequeño da una apariencia impecable a las páginas Web y aumenta el espacio disponible por página para el contenido, en ocasiones esto provoca el uso de un tamaño de texto irrazonablemente pequeño.
 
                             Desafortunadamente, esto no es bueno para la diversidad de plataformas que se usan para acceder a las páginas Web, desde dispositivos portátiles con pantallas diminutas, hasta los grandes proyectores conectados a los ordenadores. Incluso, en una misma plataforma, la configuración del texto podría variar.
@@ -176,6 +189,7 @@
 
     </main>
 </body>
+<script src="https://kit.fontawesome.com/d47799ae54.js" crossorigin="anonymous"></script>
 <script src="js/nav.js"></script>
 <script>
     window.addEventListener('scroll', function () {

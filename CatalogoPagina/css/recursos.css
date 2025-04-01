@@ -1,7 +1,12 @@
 @import url(estilo.css);
 
+#recursos{
+    padding-top: 60px;
+}
+
 #recursos-header {
-    height: 300px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     background: url(../recursos/fondo.png), linear-gradient(90deg, rgba(0, 122, 187, 1) 0%, rgba(251, 251, 250, 1) 85%);
     background-size: 60%, cover;
     background-repeat: no-repeat, no-repeat;

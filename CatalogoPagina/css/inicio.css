@@ -1,20 +1,26 @@
 @import url(estilo.css);
 
 #inicio {
+    padding-top: 60px;
     margin-bottom: 100px;
 }
 
 #inicio-header {
-    height: 400px;
     background: linear-gradient(230deg, rgba(0, 122, 187, 0.5) 0%, rgba(251, 251, 250, 0.5) 50%, rgba(75, 67, 202, 0.5) 100%);
+    padding-top: 35px;
+    padding-bottom: 35px;
 }
 
 #inicio-img {
-    width: 45%;
-    right: 0;
-    margin-right: 15%;
-    margin-top: 10px;
+    width: 550px;
     animation: flotar 5s ease-in-out infinite;
+    position: relative;
+    float: right;
+    margin-right: 15%;
+}
+
+#inicio-img img{
+    width: 100%;
 }
 
 #estadisticas {
@@ -91,9 +97,20 @@
     align-items: center;
 }
 
+.grafica h1 {
+    text-align: left;
+    padding-left: 20px;
+}
+
 .grafica p{
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.grafica i{
+    color:var(--blanco);
+    display: none;
+    padding-left: 5px;
 }
 
 .grafica-1{
@@ -112,11 +129,6 @@
     width:90%;
 }
 
-.grafica h1 {
-    text-align: left;
-    padding-left: 20px;
-}
-
 #acercade-header {
     height: 450px;
     background: linear-gradient(90deg, rgba(251, 251, 250, 0.8) 0%, rgba(107, 102, 213, 0.8) 100%);
@@ -125,7 +137,7 @@
 }
 
 #contenedor-parallax {
-    width: 65%;
+    width: 800px;
     height: 100%;
     overflow: hidden;
     position: relative;
@@ -143,15 +155,21 @@
 }
 
 #herramientas{
-    padding:50px;
+    padding-top:40px;
+    padding-bottom:40px;
+}
+
+#antes-despues{
+    width:90%; 
+    height: 390px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border: 1.5px solid var(--gris);
+    overflow: hidden;
 }
 
 #contenedor-slider{
     width: 100%;
-    height:490px;
     position: relative;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    border: 1.5px solid var(--gris);
 }
 
 #contenedor-slider img {
@@ -167,9 +185,9 @@
     position: relative;
     appearance: none; 
     width: 100%;
-    height: 500px;
     outline: none;
     background-color: transparent;
+    height: 390px;
 }
 
 #slider:hover{
@@ -201,7 +219,8 @@
 
 #recursos {
     background-color: var(--azul);
-    height: 500px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 #contenedor-recursos {
@@ -209,6 +228,7 @@
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .recurso {
@@ -258,7 +278,8 @@
 }
 
 #contacto .seccion-flex {
-    height: 800px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 #formulario {

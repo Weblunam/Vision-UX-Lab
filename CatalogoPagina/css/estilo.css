@@ -32,6 +32,7 @@
 main {
     width: 100%;
     background-color: var(--blanco);
+    overflow: hidden;
 }
 
 section {
@@ -40,7 +41,7 @@ section {
 
 h1 {
     font-family: 'SegoeUI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 65px;
+    line-height: 50px;
 }
 
 h2 {
@@ -82,6 +83,10 @@ label {
     text-align: left;
 }
 
+.titulo-secciones{
+    font-size: 4.5rem;
+}
+
 .titulo-1{
     font-size: 4rem;
     font-weight: 800;
@@ -113,14 +118,17 @@ label {
 
 .azul {
     color: var(--azul);
+    transition: 0.7s ease;
 }
 
 .blanco {
     color: var(--blanco);
+    transition: 0.7s ease;
 }
 
 .negro {
     color: var(--negro);
+    transition: 0.7s ease;
 }
 
 .link{
@@ -159,7 +167,7 @@ button:hover {
 nav {
     width: 100%;
     height: 60px;
-    position: sticky;
+    position: fixed;
     top: 0;
     background-color: white;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -189,10 +197,6 @@ nav>ul>li {
     text-decoration-skip-ink: none;
 }
 
-nav ul li:nth-child(1){
-    display: none;
-}
-
 nav>ul>li:hover {
     text-decoration-color: var(--morado);
     text-underline-offset: 17px;
@@ -204,6 +208,44 @@ nav>ul>li:hover a {
 
 nav>ul>li>a{
     transition: 0.2s ease;
+}
+
+#nav-responsiva{
+    display: none;
+}
+
+#menu-icon{
+    display: block;
+    line-height: 60px;
+}
+
+#close-icon{
+    display: none;
+    line-height: 60px;
+}
+
+#nav-responsiva ul {
+    flex-direction: column;
+    justify-content:left;
+    align-items: center;
+    gap:50px;
+}
+
+#nav-responsiva ul li a{
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#nav-responsiva ul li i {
+    color: var(--morado);
+    transform: scale(1.8);
+}
+
+.estilo-nav-responsiva{
+    height: 50vh;
+    background-color: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(9px);
 }
 
 .active-li {
@@ -255,11 +297,12 @@ nav>ul>li>a{
 
 footer {
     width: 100%;
-    height: 150px;
     display: flex;
     background-color: var(--morado);
     justify-content: space-around;
     border-top: 1.5px solid var(--blanco);
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .div-footer {

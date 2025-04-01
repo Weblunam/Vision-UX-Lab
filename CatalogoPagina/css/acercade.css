@@ -1,7 +1,7 @@
 @import url(estilo.css);
 
 #acercade {
-    height: 400px;
+    padding-top: 60px;
 }
 
 #acercade img:nth-child(1) {
@@ -36,7 +36,8 @@
 }
 
 #acercade-header {
-    height: 350px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     background: linear-gradient(90deg, rgba(75, 67, 202, 0.75) 0%, rgba(0, 122, 187, 0.75) 50%, rgba(75, 67, 202, 0.75) 100%);
 }
 
