@@ -7,6 +7,7 @@
     <title>Vision UX Lab</title>
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
@@ -14,6 +15,7 @@
     <main class="animate__animated animate__fadeIn">
         <nav>
             <ul>
+                <li><i class="fa-solid fa-bars"></i></li>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="#acercade">Acerca de</a></li>
                 <li><a href="#herramientas">Herramientas</a></li>
@@ -192,11 +194,11 @@
                     <p class="parrafo morado">Déjanos tu sugerencia o pregunta y trabajaremos para mejorar este espacio.
                     </p>
                     <section id="formulario">
-                        <form>
+                        <form action="envia.php" method="post">
                             <p class="morado">Nombre:</p>
                             <input type="text" name="nombre" placeholder="Escribe tu nombre:" required>
                             <p class="morado">Apellidos:</p>
-                            <input type="text" name="apellidos" placeholder="Escribe tus apellidos:" required>
+                            <input type="text" name="apellido" placeholder="Escribe tus apellidos:" required>
                             <p class="morado">Correo electrónico:</p>
                             <input type="text" name="correo" placeholder="Escribe tu correo electrónico:" required>
                             <p class="morado">Mensaje:</p>

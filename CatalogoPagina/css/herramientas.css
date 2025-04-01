@@ -82,7 +82,7 @@
 #iconos-categorias .categoria:hover {
     cursor: pointer;
     transition: 0.7s ease;
-    transform: scale(0.95);
+    transform: scale(0.9);
 }
 
 .categoria label {

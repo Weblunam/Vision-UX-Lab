@@ -1,0 +1,21 @@
+/* nav */
+
+@media screen and (min-width: 360px) and (max-width: 640px) {
+    nav ul{
+        flex-direction: column;
+    }
+    nav ul li:nth-child(1){
+        display: block;
+    }
+    
+    nav ul li:not(:nth-child(1)){
+        display: none;
+    }
+    nav ul li i{
+        color:var(--morado);
+        transform: scale(1.8);
+    }
+    .seccion-header{
+        width:70%;
+    }
+}

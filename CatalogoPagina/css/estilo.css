@@ -189,6 +189,10 @@ nav>ul>li {
     text-decoration-skip-ink: none;
 }
 
+nav ul li:nth-child(1){
+    display: none;
+}
+
 nav>ul>li:hover {
     text-decoration-color: var(--morado);
     text-underline-offset: 17px;
