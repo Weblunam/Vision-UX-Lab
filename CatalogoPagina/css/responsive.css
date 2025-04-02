@@ -1,4 +1,3 @@
-
 @media screen and (min-width: 360px) and (max-width: 640px) {
     .titulo {
         font-size: 4.8rem;
@@ -26,13 +25,25 @@
         width: 70%;
     }
 
-    #nav-escritorio{
+    .seccion-flex {
+        width: 100%;
+        gap: 15px;
+    }
+
+    .seccion-flex p {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    #nav-escritorio {
         display: none;
     }
-    
-    #nav-responsiva{
+
+    #nav-responsiva {
         display: block !important;
     }
+
+    /* inicio */
 
     #inicio-header {
         margin-bottom: 240px;
@@ -91,16 +102,6 @@
         display: none;
     }
 
-    .seccion-flex {
-        width: 100%;
-        gap: 15px;
-    }
-
-    .seccion-flex p {
-        padding-left: 60px;
-        padding-right: 60px;
-    }
-
     #herramientas {
         padding-top: 50px;
         padding-bottom: 50px;
@@ -128,6 +129,10 @@
         height: 30px;
     }
 
+    #recursos .seccion-flex{
+        gap:20px;
+    }
+
     #contenedor-recursos {
         flex-direction: column;
         gap: 5px;
@@ -142,18 +147,185 @@
 
     .recurso label {
         height: 35px;
+        font-size: 1.3rem;
     }
 
     .img-recurso {
         height: 110px;
     }
 
+    /* acerca de */
+
+    #acercade-header-2 {
+        padding-bottom: 280px;
+    }
+
+    #contenedor-img-acercade {
+        width: 350px;
+        margin: 0 auto;
+        top: 280px;
+        float: none;
+    }
+
+    #mision-vision {
+        flex-direction: column;
+    }
+
+    #mision-vision div {
+        width: 100%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        gap: 20px;
+    }
+
+    #mision-vision>div>p {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    #banner {
+        background-size: cover;
+    }
+
+    #contenedor-banner {
+        width: 350px;
+        margin: 0 auto;
+        float: none;
+        top: 220px;
+    }
+
+    #banner-header {
+        padding-top: 40px;
+        padding-bottom: 280px;
+    }
+
+    #banner-header>.seccion-header .titulo {
+        font-size: 3.5rem;
+        line-height: 40px;
+    }
+
+    #llamado-a-la-accion-header {
+        padding-top: 50px;
+        padding-bottom: 250px;
+    }
+
+    #contenedor-img-banner {
+        width: 250px;
+        float: right;
+        top: 330px;
+    }
+
+    #contenedor-iconos i {
+        transform: scale(2.2);
+    }
+
+    /* herramientas */
+
+    #contenedor-header-herramientas div .titulo {
+        font-size: 4rem;
+        line-height: 45px;
+    }
+
+    #contenedor-header-herramientas>img {
+        width: 50px;
+    }
+
+    #contenedor-header-herramientas>p {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #iconos-categorias {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .categoria{
+        width:110px;
+        height:170px;
+    }
+
+    .img-categoria{
+        height:110px;
+    }
+
+    .categoria label{
+        height:35px;
+        font-size: 1.3rem;
+    }
+
+    #contenedor-input{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #probar-herramientas-contenedor{
+        width:100%;
+        box-shadow: none;
+        border:none;
+        border-radius: 0;
+        background-color: rgba(251, 251, 250, 0.6);
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    #probar-herramientas-contenedor button{
+        width:30%;
+    }
+
+    #no-resultados-contenedor{
+        width:100%;
+    }
+
+    #uso-de-herramientas {
+        flex-direction: column;
+        gap:20px;
+    }
+
+    #uso-de-herramientas .titulo-2{
+        font-size: 2rem;
+        text-align: center;
+        padding: 0;
+    }
+
+    #texto-categoria {
+        flex-direction: column;
+        gap:20px;
+    }
+
+    #texto-categoria button{
+        margin: 0;
+    }
+
+    #texto-categoria div h2, #texto-categoria div p{
+        padding-left: 20px;
+        padding-right: 35px;
+        padding-bottom: 0;
+    }
+
+    .herramienta {
+        width: 95%;
+    }
+
+    .img-herramienta{
+        width: 65px;
+    }
+
+    #img-switch-div{
+    gap:80px;
+    flex-wrap: wrap;
+    }
+
+    /* footer */
+
     footer {
         flex-direction: column;
     }
 
     .div-footer {
-        width: 100%;
+        width: 100% !important;
     }
 
     .div-footer ul li {

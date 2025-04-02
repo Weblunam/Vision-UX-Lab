@@ -1,6 +1,6 @@
 @import url(estilo.css);
 
-#herramientas{
+#herramientas-main{
     padding-top: 60px;
 }
 
@@ -34,7 +34,7 @@
 }
 
 #contenedor-header-herramientas>img {
-    width: 8%;
+    width: 60px;
 }
 
 #contenedor-header-herramientas>p {
@@ -46,8 +46,10 @@
 #iconos-categorias {
     width: 100%;
     display: flex;
-    justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .categoria {
@@ -112,14 +114,16 @@
     border-radius: 30px;
     border-right: 5px solid rgba(75, 67, 202, 0.5);
     border-bottom: 5px solid rgba(75, 67, 202, 0.5);
-    margin: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     padding-bottom: 50px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     transition: 0.3s ease;
 }
 
 #uso-de-herramientas {
-    height: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border-bottom: 1px solid var(--gris);
     display: flex;
     align-items: center;
@@ -187,7 +191,8 @@
 }
 
 #texto-categoria {
-    height: 130px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -257,7 +262,7 @@ p {
 }
 
 .img-herramienta {
-    width: 18%;
+    width: 80px;
     border-radius: 10px;
     overflow: hidden;
     background-color: var(--gris);

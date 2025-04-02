@@ -4,55 +4,37 @@
     padding-top: 60px;
 }
 
-#acercade img:nth-child(1) {
-    width: 35%;
-    left: 0;
-    margin-left: 30%;
-    margin-top: -20px;
+#contenedor-img-acercade{
+    width:600px;
+    position: relative;
+    float:right;
+    margin-right:150px;
     animation: flotar 5s ease-in-out infinite;
 }
 
-#acercade img:nth-child(2) {
-    width: 10%;
-    left: 0;
-    margin-left: 55%;
-    animation: flotar 5s ease-in-out infinite;
+#contenedor-img-acercade img{
+    width: 100%;
 }
 
-#acercade img:nth-child(3) {
-    width: 25%;
-    right: 0;
-    margin-right: 20%;
-    margin-top: 40px;
-    animation: flotar 5s ease-in-out infinite;
-}
-
-#acercade img:nth-child(4) {
-    width: 10%;
-    right: 0;
-    margin-right: 12%;
-    margin-top: 230px;
-    animation: flotar 5s ease-in-out infinite;
-}
-
-#acercade-header {
-    padding-top: 30px;
-    padding-bottom: 30px;
+#acercade-header-2 {
+    padding-top: 50px;
+    padding-bottom: 50px;
     background: linear-gradient(90deg, rgba(75, 67, 202, 0.75) 0%, rgba(0, 122, 187, 0.75) 50%, rgba(75, 67, 202, 0.75) 100%);
 }
 
 #acercade-contenido {
-    height: 350px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 #mision-vision {
-    height: 450px;
     display: flex;
 }
 
 #mision-vision>div {
     width: 50%;
-    height: 100%;
+    padding-top: 70px;
+    padding-bottom: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,7 +43,7 @@
 }
 
 #mision-vision>div>img {
-    width: 9%;
+    width: 10%;
 }
 
 #mision-vision>div>p {
@@ -84,8 +66,21 @@
     background-position: center;
 }
 
+#contenedor-banner {
+    width:600px;
+    float:right;
+    top:-40px;
+    position: relative;
+    animation: flotar 5s ease-in-out infinite;
+}
+
+#contenedor-banner img{
+    width:100%;
+}
+
 #banner-header {
-    height: 400px;
+    padding-top: 90px;
+    padding-bottom: 90px;
 }
 
 #banner-header>.seccion-header .titulo {
@@ -101,16 +96,9 @@
     display: inline-block;
 }
 
-#banner>img {
-    width: 45%;
-    right: 0;
-    margin-right: 5%;
-    margin-top: -50px;
-    animation: flotar 5s ease-in-out infinite;
-}
-
 #llamado-a-la-accion-header {
-    height: 500px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     background: rgb(0, 122, 187);
     background: linear-gradient(90deg, rgba(75, 67, 202, 1) 0%, rgba(0, 122, 187, 1) 100%);
 }
@@ -133,10 +121,15 @@
     transition: 0.5s ease;
 }
 
-#llamado-a-la-accion-header img{
-    width:40%;
-    right:0;
-    bottom:0;
-    margin-bottom: 20px;
-    margin-right: 20px;
+#contenedor-img-banner{
+    width:500px;
+    float: right;
+    top:40px;
+    right:40px;
+    position: relative;
 }
+
+#contenedor-img-banner img{
+    width:100%;
+}
+
