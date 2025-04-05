@@ -1,6 +1,7 @@
 var barraNav = document.querySelectorAll('nav');
 var nav2 = document.querySelector('#nav-responsiva');
 var txtNavResponsiva = document.querySelectorAll('#nav-responsiva ul li a');
+var contenedorNavResponsiva = document.querySelector("#nav-responsiva ul");
 var menu = document.querySelector('#menu-icon');
 var close = document.querySelector('#close-icon');
 
@@ -24,22 +25,24 @@ function abrirNavResponsiva() {
         texto.style.display = "block";
         setTimeout(() => {
             texto.style.opacity = "1";
+            close.style.display = "block";
+    menu.style.display = "none";
+    contenedorNavResponsiva.style.justifyContent = "center";
         }, 250);
     });
-    close.style.display = "block";
-    menu.style.display = "none";
 }
 
 function cerrarNavResponsiva() {
     nav2.classList.remove("estilo-nav-responsiva");
-    close.style.display = "none";
     txtNavResponsiva.forEach(texto => {
         texto.style.opacity = "0";
         setTimeout(() => {
+            close.style.display = "none";
             texto.style.display = "none";
+            menu.style.display = "block";
+            contenedorNavResponsiva.style.justifyContent = "left";
         }, 250);
     });
-    menu.style.display = "block";
 }
 
 

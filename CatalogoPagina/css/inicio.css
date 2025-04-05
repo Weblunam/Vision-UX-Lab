@@ -3,6 +3,7 @@
 #inicio {
     padding-top: 60px;
     margin-bottom: 100px;
+    position: relative;
 }
 
 #inicio-header {
@@ -12,11 +13,12 @@
 }
 
 #inicio-img {
-    width: 550px;
+    width: 520px;
     animation: flotar 5s ease-in-out infinite;
     position: relative;
     float: right;
-    margin-right: 15%;
+    right: 15%;
+    top: 20px;
 }
 
 #inicio-img img{
@@ -107,12 +109,6 @@
     padding-right: 20px;
 }
 
-.grafica i{
-    color:var(--blanco);
-    display: none;
-    padding-left: 5px;
-}
-
 .grafica-1{
     width:60%;
 }
@@ -161,19 +157,23 @@
 
 #antes-despues{
     width:90%; 
-    height: 390px;
+    aspect-ratio: 16 / 9;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     border: 1.5px solid var(--gris);
     overflow: hidden;
+    position: relative;
 }
 
 #contenedor-slider{
     width: 100%;
+    height: 100%;
     position: relative;
 }
 
 #contenedor-slider img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     position: absolute;
 }
 
@@ -187,7 +187,7 @@
     width: 100%;
     outline: none;
     background-color: transparent;
-    height: 390px;
+    height: 100%;
 }
 
 #slider:hover{
@@ -233,7 +233,6 @@
 
 .recurso {
     width: 125px;
-    height: 220px;
     text-align: center;
 }
 

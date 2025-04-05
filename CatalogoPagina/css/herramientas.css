@@ -54,7 +54,6 @@
 
 .categoria {
     width: 135px;
-    height: 220px;
     text-align: center;
     transition: 0.7s ease;
 }
@@ -198,15 +197,14 @@
     align-items: center;
 }
 
-#texto-categoria h2,
-p {
+#texto-categoria h2, #texto-categoria p {
     padding-left: 30px;
     padding-right: 450px;
     padding-bottom: 5px;
 }
 
 #texto-categoria button{
-    width:20%;
+    padding: 10px;
     margin-right: 30px;
 }
 
@@ -221,6 +219,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .herramienta {

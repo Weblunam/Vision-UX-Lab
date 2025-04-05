@@ -43,7 +43,7 @@
 }
 
 #mision-vision>div>img {
-    width: 10%;
+    width:50px;
 }
 
 #mision-vision>div>p {
@@ -81,6 +81,10 @@
 #banner-header {
     padding-top: 90px;
     padding-bottom: 90px;
+}
+
+#banner-header>.seccion-header{
+    width:min-content;
 }
 
 #banner-header>.seccion-header .titulo {
