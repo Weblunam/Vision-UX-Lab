@@ -74,6 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                 // Creamos el elemento tarjeta y armamos su contenido
                                 const card = document.createElement("div");
                                 card.className = "herramienta";
+                                card.setAttribute('tabindex', '0');
 
                                 // Generamos la lista de caracteristicas a partir del arreglo
                                 let caracteristicasHTML = "";
@@ -95,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                                 if (details.switch_id) {
                                     switchHTML =
-                                        `<label class="switch">
+                                        `<label class="switch" tabindex="0">
                                     <input id="${details.switch_id}" type="checkbox">
                                     <div class="slider">
                                     <div class="circle">
@@ -142,7 +143,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                                 setTimeout(() => {
                                     card.classList.add("fade-in");
-                                }, 100); // pequeño retraso para que el efecto se vea mejor
+                                }, 200); // pequeño retraso para que el efecto se vea mejor
 
                                 //hace scroll cuando se selecciona una categoría
                                 if (isManualClick) {

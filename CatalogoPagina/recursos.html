@@ -18,7 +18,7 @@
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="acercade.html">Acerca de</a></li>
                 <li><a href="herramientas.html">Herramientas</a></li>
-                <li class="active-li"><a>Recursos</a></li>
+                <li class="active-li"><a href="recursos.html">Recursos</a></li>
                 <li><a href="index.html#contacto">Contacto</a></li>
             </ul>
         </nav>
@@ -36,6 +36,9 @@
         </nav>
 
         <section id="principal">
+            <div id="volver-arriba" onclick="scrollArriba()">
+                <i class="fa-solid fa-chevron-up"></i>
+            </div>
             <section id="recursos-principal">
                 <div id="recursos-header" class="header">
                     <div class="seccion-header">
@@ -190,6 +193,7 @@
 
 </body>
 <script src="https://kit.fontawesome.com/d47799ae54.js" crossorigin="anonymous"></script>
+<script src="js/volverArriba.js"></script>
 <script src="js/nav.js"></script>
 <script>
     window.addEventListener('scroll', function () {

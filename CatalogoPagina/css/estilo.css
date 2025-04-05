@@ -297,8 +297,35 @@ nav>ul>li>a{
 
 .seccion-flex p {
     text-align: center;
-    padding-left: 110px;
-    padding-right:110px;
+    padding-left: 170px;
+    padding-right:170px;
+}
+
+#volver-arriba{
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    right:0;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    border-radius: 40px;
+    z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color:rgba(75, 67, 202, 0.7);
+    opacity: 0; 
+    pointer-events: none; 
+    transition: opacity 1s ease, box-shadow 0.5s ease; 
+}
+
+#volver-arriba:hover{
+    cursor: pointer;
+    box-shadow: rgba(75, 67, 202, 0.7) 0px 0px 0px 3px;
 }
 
 footer {

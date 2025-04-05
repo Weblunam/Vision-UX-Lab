@@ -18,7 +18,7 @@
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="acercade.html">Acerca de</a></li>
-                <li class="active-li"><a>Herramientas</a></li>
+                <li class="active-li"><a href="herramientas.html">Herramientas</a></li>
                 <li><a href="recursos.html">Recursos</a></li>
                 <li><a href="index.html#contacto">Contacto</a></li>
             </ul>
@@ -37,6 +37,9 @@
         </nav>
 
         <section id="principal">
+            <div id="volver-arriba" onclick="scrollArriba()">
+                <i class="fa-solid fa-chevron-up"></i>
+            </div>
             <section id="herramientas-main">
                 <div id="herramientas-header" class="header">
                     <div id="contenedor-header-herramientas">
@@ -89,7 +92,7 @@
                         <div id="uso-de-herramientas">
                             <h2 class="morado titulo-2">Uso de herramientas</h2>
                             <div id="contenedor-input">
-                                <input id="buscador" type="text" placeholder="Busca una herramienta o recurso:">
+                                <input id="buscador" type="text" placeholder="Busca una herramienta o recurso:" tabindex="0">
                                 <span>
                                     <i class="fas fa-search"></i>
                                 </span>
@@ -149,6 +152,7 @@
     </footer>
 </body>
 <script src="https://kit.fontawesome.com/d47799ae54.js" crossorigin="anonymous"></script>
+<script src="js/volverArriba.js"></script>
 <script src="js/nav.js"></script>
 <script src="js/conectarapi.js"></script>
 <script src="js_herramientas/contraste.js"></script>
@@ -161,4 +165,6 @@
 <script src="js_herramientas/lecturaFacil.js"></script>
 <script src="js_herramientas/dislexia.js"></script>
 <script src="js_herramientas/filtroProtector.js"></script>
+<script src="js_herramientas/modoEnfoque.js"></script>
+<script src="js_herramientas/herramientaZoom.js"></script>
 </html>
