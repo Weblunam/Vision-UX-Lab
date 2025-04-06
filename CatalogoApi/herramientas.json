@@ -101,7 +101,7 @@
             "Facilita la empatía con los usuarios."
           ],
           "url_herramienta": "https://accesibilidadweb.dlsi.ua.es/?menu=hr-sim-dis-visual",
-          "switch_id": "simuladorVisionSwitch"
+          "switch_id": "tritanopiaSwitch"
         },
         {
           "id": 2,
@@ -129,7 +129,7 @@
             "Permite entender las dificultades de usuarios sin ratón."
           ],
           "url_herramienta": "https://developer.mozilla.org/es/docs/Web/Accessibility/Guides/Understanding_WCAG/Keyboard",
-          "switch_id": "modoSoloTecladoSwitch"
+          "switch_id": "enfoqueSwitch"
         },
         {
           "id": 4,
@@ -249,7 +249,7 @@
             "Mejora la accesibilidad de contenido dinámico."
           ],
           "url_herramienta": "https://developer.mozilla.org/es/docs/Web/Accessibility/ARIA/Reference/Attributes",
-          "switch_id": "ariaLiveSwitch"
+          "switch_id": null
         },
         {
           "id": 2,
@@ -263,7 +263,7 @@
             "Mejora la experiencia de usuarios sin ratón."
           ],
           "url_herramienta": "https://www.ibm.com/docs/es/idr/11.3.3?topic=features-navigating-using-keyboard",
-          "switch_id": "ordenTecladoSwitch"
+          "switch_id": "enfoqueSwitch"
         },
         {
           "id": 3,
@@ -277,7 +277,7 @@
             "Reduce el esfuerzo visual al navegar."
           ],
           "url_herramienta": "https://www.w3schools.com/css/css3_animations.asp",
-          "switch_id": "modoSinAnimacionesSwitch"
+          "switch_id": null
         },
         {
           "id": 4,
